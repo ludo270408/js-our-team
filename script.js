@@ -31,3 +31,8 @@
         image: barbara-ramos-graphic-designer.jpg;
     }
  ];
+
+ //MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+  for(let i=0; i<team_members.length; i++){
+    console.log(team_members[i]);
+  }

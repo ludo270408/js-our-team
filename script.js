@@ -38,3 +38,13 @@
   }
 
   //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+  const cards = document.getElementById('cards');
+  for(let i=0; i<team_members.length; i++){
+    let member = team_members[i];
+    const colonna = document.createElement('div');
+    colonna.classList.add('col-4');
+    let image = '<img class= "img-fluid" src="img/${team_members.image}"';
+    let text = '${img}<h2>${team_members.name}</h2><p>${team_members.role}</p>';
+    colonna.innerHTML = text;
+    cards.appendChild(colonna);
+  }

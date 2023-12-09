@@ -43,8 +43,11 @@
     let member = team_members[i];
     const colonna = document.createElement('div');
     colonna.classList.add('col-4');
+    const card = document.createElement('div');
+    card.classList('card', 'bg-light', 'border', 'rounded-1', 'm-3');
+    colonna.appendChild(card);
     let image = '<img class= "img-fluid" src="img/${team_members.image}"';
-    let text = '${img}<h2>${team_members.name}</h2><p>${team_members.role}</p>';
-    colonna.innerHTML = text;
+    let text = '<div class="p-3">${img}<h2>${team_members.name}</h2><p>${team_members.role}</p></div>';
+    card.innerHTML = text;
     cards.appendChild(colonna);
   }
